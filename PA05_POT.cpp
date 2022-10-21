@@ -18,7 +18,7 @@ Base % 10 will get the last digit and the exponent % 4 will show us the number o
 using namespace std;
 
 unsigned long int p, w;
-int D;
+
 int arr[ 10 ][ 4 ] = {
     { 0, 0, 0, 0 },
     { 1, 1, 1, 1 },
@@ -34,6 +34,7 @@ int arr[ 10 ][ 4 ] = {
 
 int main() 
 {
+int D;    
 cin >> D;
     for( int i = 0; i < D; i ++ )
     {
