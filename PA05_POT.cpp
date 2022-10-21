@@ -38,7 +38,7 @@ cin >> D;
     for( int i = 0; i < D; i ++ )
     {
         cin >> p >> w;
-        cout << arr[p %10][w %4] << endl;
+        cout << arr[ p %10 ][ w %4 ] << endl;
     }
     return 0;
 }
