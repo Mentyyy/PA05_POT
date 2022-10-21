@@ -14,7 +14,6 @@ And no matter if base is 2, 12, 22, or 678532 if the last digit from the base is
 All we have to do is to distinguish that from 0-9 numbers.
 Base % 10 will get the last digit and the exponent % 4 will show us the number of the slot in our 2D array.
 */
-
 #include <iostream>
 using namespace std;
 
@@ -41,5 +40,5 @@ cin >> D;
         cin >> p >> w;
         cout << arr[p %10][w %4] << endl;
     }
-return 0;
+    return 0;
 }
