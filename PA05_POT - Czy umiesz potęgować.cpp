@@ -19,7 +19,7 @@ using namespace std;
 
 unsigned long int p, w;
 
-int arr[ 10 ][ 4 ] = {
+int arr[10][4] = {
     { 0, 0, 0, 0 },
     { 1, 1, 1, 1 },
     { 6, 2, 4, 8 },
@@ -39,7 +39,7 @@ cin >> D;
     for( int i = 0; i < D; i ++ )
     {
         cin >> p >> w;
-        cout << arr[ p %10 ][ w %4 ] << endl;
+        cout << arr[p %10][w %4] << endl;
     }
     return 0;
 }
