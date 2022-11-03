@@ -5,38 +5,44 @@ using namespace std;
 int dane[10];
 int rozmiar;
 
-void push() {
-    if (rozmiar >= 10) {
+void push() 
+{
+    if( rozmiar >= 10 ) 
+    {
         cout << ":(" << endl;
     }
-        else {
-            cin >> dane[rozmiar];
+        else 
+        {
+            cin >> dane[ rozmiar ];
             rozmiar = rozmiar + 1;
             cout << " :) " << endl;
         }
 }
 
-void pop() {
-    if (rozmiar >= 1) {
+void pop() 
+{
+    if( rozmiar >= 1 ) 
+    {
         rozmiar = rozmiar - 1;
-        cout << dane[rozmiar] << endl;
+        cout << dane[ rozmiar ] << endl;
     }
-        else {
+        else 
+        {
             cout << ":(" << endl;
         }
 }
 
-int main() {
-
+int main() 
+{
     rozmiar = 0;
     char ch;
 
-        while (cin >> ch) {
-    
-            if (ch == '+')
+        while( cin >> ch ) 
+        {
+            if( ch == '+' )
                 push();
-            else if (ch == '-')
+            else if( ch == '-' )
                 pop();
         }
-    return (0);
+    return 0;
 }
