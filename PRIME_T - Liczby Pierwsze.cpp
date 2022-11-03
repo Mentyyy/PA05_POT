@@ -12,14 +12,14 @@ PS: Jeżeli sqrt(n) jest liczbą rzeczywistą język C i C++ automaczynie wykona
 */
 
 #include<iostream>
-#include<math.h>
+
 using namespace std;
 
 bool pierwsza( int n )
 {
 	if( n < 2 ) return false; 
 
-	for( int i = 2; i <= sqrt( n ); i++ )
+	for( int i = 2; i * i <= n; i++ )
 		if( n % i == 0 ) return false; 
 	return true; 
 }
